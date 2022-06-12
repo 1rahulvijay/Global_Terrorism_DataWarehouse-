@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Mini_Project_DW_ETL2022", "Mini_Project_DW_ETL2022\Mini_Project_DW_ETL2022.dtproj", "{0E484328-2A96-462A-8516-4447DE7791D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E484328-2A96-462A-8516-4447DE7791D3}.Development|Default.ActiveCfg = Development
+		{0E484328-2A96-462A-8516-4447DE7791D3}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C844B9F-F2BD-42C0-B6E0-7F49090A7AA7}
+	EndGlobalSection
+EndGlobal
