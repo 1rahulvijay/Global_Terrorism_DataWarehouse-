@@ -1,0 +1,1920 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0415.1144                               -->
+<workbook original-version='18.1' source-build='2022.1.1 (20221.22.0415.1144)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <CascadingFilters />
+    <CascadingFiltersHamburgerUI />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='all_data' inline='true' name='federated.1lav1tj0bi422g1cpcgah00xcjr0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='all_data' name='textscan.1n7i2xt1xcvoqv1059jn51c12kqy'>
+            <connection class='textscan' directory='C:/Users/rahul/OneDrive/Desktop/Mini Project GTD' filename='all_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1n7i2xt1xcvoqv1059jn51c12kqy' name='all_data.csv' table='[all_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' date-parse-format='yyyy' name='Year' ordinal='0' />
+            <column datatype='integer' name='Month' ordinal='1' />
+            <column datatype='integer' name='Day' ordinal='2' />
+            <column datatype='string' name='Country' ordinal='3' />
+            <column datatype='string' name='state' ordinal='4' />
+            <column datatype='string' name='Region' ordinal='5' />
+            <column datatype='string' name='city' ordinal='6' />
+            <column datatype='real' name='latitude' ordinal='7' />
+            <column datatype='real' name='longitude' ordinal='8' />
+            <column datatype='string' name='AttackType' ordinal='9' />
+            <column datatype='integer' name='Killed' ordinal='10' />
+            <column datatype='integer' name='Wounded' ordinal='11' />
+            <column datatype='string' name='Target' ordinal='12' />
+            <column datatype='string' name='Group' ordinal='13' />
+            <column datatype='string' name='Weapon_type' ordinal='14' />
+            <column datatype='string' name='Motive' ordinal='15' />
+            <column datatype='integer' name='success' ordinal='16' />
+            <column datatype='integer' name='suicide' ordinal='17' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1n7i2xt1xcvoqv1059jn51c12kqy' name='all_data.csv' table='[all_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' date-parse-format='yyyy' name='Year' ordinal='0' />
+            <column datatype='integer' name='Month' ordinal='1' />
+            <column datatype='integer' name='Day' ordinal='2' />
+            <column datatype='string' name='Country' ordinal='3' />
+            <column datatype='string' name='state' ordinal='4' />
+            <column datatype='string' name='Region' ordinal='5' />
+            <column datatype='string' name='city' ordinal='6' />
+            <column datatype='real' name='latitude' ordinal='7' />
+            <column datatype='real' name='longitude' ordinal='8' />
+            <column datatype='string' name='AttackType' ordinal='9' />
+            <column datatype='integer' name='Killed' ordinal='10' />
+            <column datatype='integer' name='Wounded' ordinal='11' />
+            <column datatype='string' name='Target' ordinal='12' />
+            <column datatype='string' name='Group' ordinal='13' />
+            <column datatype='string' name='Weapon_type' ordinal='14' />
+            <column datatype='string' name='Motive' ordinal='15' />
+            <column datatype='integer' name='success' ordinal='16' />
+            <column datatype='integer' name='suicide' ordinal='17' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[all_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[all_data.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[all_data.csv]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Day]</local-name>
+            <parent-name>[all_data.csv]</parent-name>
+            <remote-alias>Day</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[all_data.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[all_data.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[all_data.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[all_data.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[all_data.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[all_data.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AttackType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AttackType]</local-name>
+            <parent-name>[all_data.csv]</parent-name>
+            <remote-alias>AttackType</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Killed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Killed]</local-name>
+            <parent-name>[all_data.csv]</parent-name>
+            <remote-alias>Killed</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wounded</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Wounded]</local-name>
+            <parent-name>[all_data.csv]</parent-name>
+            <remote-alias>Wounded</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Target</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Target]</local-name>
+            <parent-name>[all_data.csv]</parent-name>
+            <remote-alias>Target</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Group]</local-name>
+            <parent-name>[all_data.csv]</parent-name>
+            <remote-alias>Group</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weapon_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Weapon_type]</local-name>
+            <parent-name>[all_data.csv]</parent-name>
+            <remote-alias>Weapon_type</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Motive</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Motive]</local-name>
+            <parent-name>[all_data.csv]</parent-name>
+            <remote-alias>Motive</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>success</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[success]</local-name>
+            <parent-name>[all_data.csv]</parent-name>
+            <remote-alias>success</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>suicide</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[suicide]</local-name>
+            <parent-name>[all_data.csv]</parent-name>
+            <remote-alias>suicide</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Attack Type' datatype='string' name='[AttackType]' role='dimension' type='nominal' />
+      <column caption='Time' datatype='date' name='[Calculation_759419540141338624]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='makedate([Year],[Month],[Day])' />
+      </column>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Day]' role='dimension' type='quantitative' />
+      <column datatype='string' name='[Group]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Killed]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+      <column caption='Weapon type' datatype='string' name='[Weapon_type]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Wounded]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='all_data.csv' datatype='table' name='[__tableau_internal_object_id__].[all_data.csv_3D89AC8B63A14440964E87323ACA1AB7]' role='measure' type='quantitative' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Success' datatype='integer' name='[success]' role='measure' type='quantitative' />
+      <column caption='Suicide' datatype='integer' name='[suicide]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[all_data.csv_3D89AC8B63A14440964E87323ACA1AB7]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:all_data.csv_3D89AC8B63A14440964E87323ACA1AB7:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Group]' derivation='None' name='[none:Group:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Killed]' derivation='Sum' name='[sum:Killed:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Wounded]' derivation='Sum' name='[sum:Wounded:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[success]' derivation='Sum' name='[sum:success:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[suicide]' derivation='Sum' name='[sum:suicide:qk]' pivot='key' type='quantitative' />
+      <drill-paths>
+        <drill-path name='Country, state, city'>
+          <field>[Country]</field>
+          <field>[state]</field>
+          <field>[city]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1lav1tj0bi422g1cpcgah00xcjr0].[sum:Killed:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1lav1tj0bi422g1cpcgah00xcjr0].[__tableau_internal_object_id__].[cnt:all_data.csv_3D89AC8B63A14440964E87323ACA1AB7:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1lav1tj0bi422g1cpcgah00xcjr0].[sum:Wounded:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1lav1tj0bi422g1cpcgah00xcjr0].[sum:suicide:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1lav1tj0bi422g1cpcgah00xcjr0].[sum:success:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Group:nk]' palette='sf_watermelon' type='palette'>
+            <map to='#0a611b'>
+              <bucket>&quot;Al Zawahiri Loyalists&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Al-Qaida in Iraq&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Americans for Justice&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Ansar al-Islam&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Anti-Abortion extremists&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Anti-Government extremists&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Anti-Liberal extremists&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Anti-Sikh extremists&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Arabs&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Armenian Group&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Asa&apos;ib Ahl al-Haqq&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Black Afro Militant Movement&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Black Nationalists&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Chicano Liberation Front&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Condor&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Croatian Liberation Army&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Cuban Secret Army&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Earth Night Action Group&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Farm Animal Revenge Militia (FARM)&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Gay Liberation Front&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Hanafi Muslims&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Imam Hussein Brigade&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Iranians&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Iraqi Revolutionary Forces&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Islamic Movement of Iraqi Mujahidin&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Jaish al-Ta&apos;ifa al-Mansura&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Jewish Defense League (JDL)&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Junaid Jihadist Battalion&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Kata&apos;ib al-Imam Ali&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Kurdish Peshmerga Guerrillas&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Left-wing extremists&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;M-7&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;May 19 Communist Order&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Mormon Extremist&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Mujahedeen Shura Council&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;National Committee to Combat Fascism&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;New World Liberation Front (NWLF)&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Organization 544&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Patriotic Union of Kurdistan (PUK)&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Popular Front for the Liberation of Palestine (PFLP)&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Protectors of Islam Brigade&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Puerto Rican Revolutionary Movement&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Republic of New Afrika&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Revolutionary Commandos of the People (CRP)&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Right-wing extremists&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Secret Cuban Government&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Sons of Liberty&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Students for a Democratic Society&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Supreme Council for Islamic Revolution in Iraq (SCIRI)&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;The Justice Department&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Thunder of Zion&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;United Freedom Front (UFF)&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;Vietnamese Organization to Exterminate Communists and Restore the Nation&quot;</bucket>
+            </map>
+            <map to='#0a611b'>
+              <bucket>&quot;White Rabbit Three Percent Illinois Patriot Freedom Fighters Militia&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;African-American extremists&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Al-Qaida&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Americans for a Competent Federal Judicial System&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Ansar al-Din&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Anti Shah of Iran&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Anti-Environmentalists&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Anti-LGBT extremists&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Anti-Semitic extremists&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Arab Socialist Baath Party of Iraq&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Armed Vanguards of a Second Mohammed Army&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Aryan Republican Army&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;BAY Bombers&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Black Muslims&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Brigades of Iman Hassan-al-Basri&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Comrades in Arms&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Croatian Freedom Fighters&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Cuban extremists&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Earth Liberation Front (ELF)&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Evan Mecham Eco-Terrorist International Conspiracy (EMETIC)&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Gaddafi loyalists&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Hamawand Tribe&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Holders of the Black Banners&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Iranian extremists&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Iraqi National Congress (INC)&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Islamic Jihad Brigades&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Islamist extremists&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Jewish Defenders&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Jonathan Jackson Brigade&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Kahane Chai&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Kurdish Militants&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Lebanese Man&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Luis Boitel Commandos&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;May 15 Organization for the Liberation of Palestine&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Minutemen American Defense&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Mujahedeen Group&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;National Accord Movement&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;New Jewish Defense League&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Omega-7&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Palestinians&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Phineas Priesthood&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Pro-LGBT Rights extremists&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Puerto Rican Resistance Movement&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Regulators&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Revolutionary Cells-Animal Liberation Brigade&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Revolutionary Labor Commandos&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Secret Army Organization&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Shield of Islam Brigade&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Student Radicals&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Supreme Command for Jihad and Liberation&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;The Jewish Execution with Silence&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;The World United Formosans for Independence (WUFI)&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;United Aryan Empire&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Veterans United for Non-Religious Memorials&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;White Panther Party&quot;</bucket>
+            </map>
+            <map to='#5c3f22'>
+              <bucket>&quot;Zebra killers&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Action Squad&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Al-Nusrah Front&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;American Servicemen&apos;s Union (ASU)&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Animal Rights extremists&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Anti Kurdish Workers Party Iraq nationals&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Anti-Communist Viets Organization&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Anti-Kim Jong-il extremists&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Anti-Republican extremists&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Antonia Martinez Student Commandos (AMSC)&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Armed Revolutionary Independence Movement (MIRA)&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Aryan Nation&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Barzani Guerrillas&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Black Liberation Army&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Boricua Revolutionary Front&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Coalition to Save the Preserves (CSP)&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Covenant, Sword and the Arm of the Lord (CSA)&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Cuban Exiles&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Earth First!&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Environmentalists&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Fuerzas Armadas de Liberacion Nacional (FALN)&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Gunmen&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Hizballah-Iraq&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;International Committee Against Nazism&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Iraqi Mujahideen&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Islamic Companies&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Islamic State of Iraq and the Levant (ISIL)&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Jewish Committee of Concern&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Jihadist Soldiers&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Justice Commandos for the Armenian Genocide&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Kurdish Democratic Party-Iraq (KDP)&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Latin America Anti-Communist Army (LAACA)&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Lolita Lebron Puerto Rican Liberation Command&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Martyr Abu Ja&apos;far Group&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Military Council of the Tribal Revolutionaries (MCTR)&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Mujahedeen Corps in Iraq&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Muslim extremists&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Neo-Nazi extremists&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Omar Bin Khattab Group&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Palestine Liberation Organization (PLO)&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;People&apos;s Revolutionary Party&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Pro-Government extremists&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Puerto Rican Nationalists&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Red Guerilla Family&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Revolutionary Action Party&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Revolutionary Force Seven&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Seattle Liberation Front&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Shia Muslim extremists&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Strikers&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Supporters of Charles Manson&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Tehrik-i-Taliban Pakistan (TTP)&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;The Scorpion&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Unified Kurdish Socialist Party&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Up the IRS, Inc&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;White extremists&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;Youth of the Star&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Abu Nidal Organization (ANO)&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Al-Naqshabandiya Army&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;American Indian Movement&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Animal Liberation Front (ALF)&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Ansar al-Tahwid wal Sunna&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Anti-Castro Group&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Anti-Israeli extremists&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Anti-Police extremists&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Anti-White extremists&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Armed Forces of Popular Resistance (FARP)&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Army of God&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Banner of Islam&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Black Hebrew Israelites&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Black September&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Citizens for Constitutional Freedom&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Court Reform extremists&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Cuban C-4 Movement&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Diyala Salvation Council&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Environmental Life Force&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Front for the National Liberation of Puerto Rico&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Guerrilla Forces for Liberation&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Hawaiian extremists&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Independent Armed Revolutionary Commandos (CRIA)&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Iraqi Islamic Vanguards for National Salvation (IIVNS)&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Islamic Army in Iraq (al-Jaish al-Islami fi al-Iraq)&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Islamic State of Iraq (ISI)&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Jewish Armed Resistance&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Jihadi-inspired extremists&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Just Punishment Brigades&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Ku Klux Klan&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Kurds&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Libyan Students&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Mahdi Army&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Militants&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Mujahedeen Brigades&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Munadil al-Jumalyi Brigade&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;National Socialist Liberation Front&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Nuclear Liberation Front&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Otpor&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;People&apos;s Liberation Army (United States)&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Posse Comitatus&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Puerto Rican Liberation Front&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Rajneeshees&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Revenge of the Trees&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Revolutionary Force 26&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Save Our Israel Land&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Serbian Nationalists&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Stop the War Coalition&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Sunni Supporters&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Tawhid and Jihad&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;The Owners of the White Flags&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Tribesmen&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Unknown&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Welsh Extremists&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;Young Cuba&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Abu Jaafar al-Mansur Brigades&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Al-Fatihin Army (AFA)&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Al-Qaida Kurdish Battalions (AQKB)&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Anbar Salvation Council&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Ansar al-Sunna&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Anti-Castro Command&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Anti-Gun Control extremists&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Anti-Nuclear extremists&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Anti-Trump extremists&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Armed Commandos of Student Self Defense&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Armenians&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Badr Brigades&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Black Brigade (United States)&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Black Revolutionary Assault Team&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Christian Liberation Army&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Coordination of the United Revolutionary Organization (CORU)&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Cuban Action&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Death Squad (Iraq)&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;El Movimiento Revolucionario Independinista&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Fred Hampton Unit of the People&apos;s Forces&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Grupo Estrella&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Hatikvah Leumi or National Hope&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Incel extremists&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Iraqi extremists&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Irish Republican Army (IRA)&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Islamic Salvation Front (FIS)&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Jamaat-al-Fuqra&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Jewish Extremists&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Jund Al-Tawid&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Khalid ibn Walid Brigade&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Kurdistan Workers&apos; Party (PKK)&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Liberals of Galilee&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Macheteros&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Mexican Revolutionary Movement&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Mujahedeen Army&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Mukhtar Army&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;National Integration Front (FIN)&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Ninth of June Organization&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Organization of Volunteers for the Puerto Rican Revolution&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;People&apos;s Brigade For A Healthy Genetic Future&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Popular Mobilization Forces (Iraq)&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Puerto Rican Armed Resistance&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Quartermoon Society&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Revenge Brigade&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Revolutionary Force 9&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Salafi Abu-Bakr al-Siddiq Army&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Separatists&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Sovereign Citizen&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Sunni Muslim extremists&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Takfir wal-Hijra (Excommunication and Exodus)&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;The Order II (Bruder Schweigen Strike Force II)&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Tribal Thumb&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Universal Proutist Revolutionary Federation&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Weather Underground, Weathermen&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;Worldwide Organization of Native Taiwanese&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;1920 Revolution Brigades&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Al-Da&apos;wah Party&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Al-Qaida in the Arabian Peninsula (AQAP)&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Anarchists&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Ansar al-Jihad&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Anti-Arab extremists&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Anti-Government Group&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Anti-Muslim extremists&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Anti-Technology extremists&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Armed Commandos of Liberation&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Armenian Secret Army for the Liberation of Armenia&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Baathist extremists&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Black American Moslems&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Black Panthers&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Chicano Radicals&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Continental Revolutionary Army&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Croatian Nationalists&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Cypriot&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;East Side Action Committee&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Fourth Reich Skinheads&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;George Jackson Brigade&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Harakat al-Nujaba&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Imperial Iranian Patriotic Organization&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Iraq&apos;s Jihadist Leagues&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Iraqi Sunni Extremists&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Islamic Mujahidin&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Jaish-e-Mohammad (Iraq)&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Jewish Direct Action&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Jund al-Sahabah Group&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Kata&apos;ib Hezbollah&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Kurdistan National Union&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Left-Wing Militants&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Maccabee Squad and the Shield of David&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Medellin Drug Cartel&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Movement for Cuban Justice (Pragmatistas)&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Mujahedin-e Khalq (MEK)&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;National Front for the Liberation of Cuba (FLNC)&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;New Year&apos;s Gang&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Organization Alliance of Cuban Intransigence&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Pedro Albizu Campos Revolutionary Forces&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Popular Liberation Army (Puerto Rico)&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Provisional Coordinating Committee for the Defense of Labor&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Qaddafi loyalists&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Republic of Texas&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Revolutionary Communist Youth Brigade (RCYB)&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;ROSADO-SOTO Command&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Secret Organization Zero&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Sons of the Gestapo&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Students For Insurrection&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Symbionese Liberation Army (SLA)&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;The Order (Silent Brotherhood)&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Tontons Macoutes&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;United Jewish Underground&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;Vietnamese Refugees&quot;</bucket>
+            </map>
+            <map to='#f598a7'>
+              <bucket>&quot;World Church of the Creator&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='all_data.csv' id='all_data.csv_3D89AC8B63A14440964E87323ACA1AB7'>
+            <properties context=''>
+              <relation connection='textscan.1n7i2xt1xcvoqv1059jn51c12kqy' name='all_data.csv' table='[all_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' date-parse-format='yyyy' name='Year' ordinal='0' />
+                  <column datatype='integer' name='Month' ordinal='1' />
+                  <column datatype='integer' name='Day' ordinal='2' />
+                  <column datatype='string' name='Country' ordinal='3' />
+                  <column datatype='string' name='state' ordinal='4' />
+                  <column datatype='string' name='Region' ordinal='5' />
+                  <column datatype='string' name='city' ordinal='6' />
+                  <column datatype='real' name='latitude' ordinal='7' />
+                  <column datatype='real' name='longitude' ordinal='8' />
+                  <column datatype='string' name='AttackType' ordinal='9' />
+                  <column datatype='integer' name='Killed' ordinal='10' />
+                  <column datatype='integer' name='Wounded' ordinal='11' />
+                  <column datatype='string' name='Target' ordinal='12' />
+                  <column datatype='string' name='Group' ordinal='13' />
+                  <column datatype='string' name='Weapon_type' ordinal='14' />
+                  <column datatype='string' name='Motive' ordinal='15' />
+                  <column datatype='integer' name='success' ordinal='16' />
+                  <column datatype='integer' name='suicide' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_data' name='federated.1lav1tj0bi422g1cpcgah00xcjr0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lav1tj0bi422g1cpcgah00xcjr0'>
+            <column caption='Time' datatype='date' name='[Calculation_759419540141338624]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='makedate([Year],[Month],[Day])' />
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[Day]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Group]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Killed]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+            <column caption='Weapon type' datatype='string' name='[Weapon_type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Wounded]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Calculation_759419540141338624]' derivation='MDY' name='[md:Calculation_759419540141338624:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Group]' derivation='None' name='[none:Group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weapon_type]' derivation='None' name='[none:Weapon_type:nk]' pivot='key' type='nominal' />
+            <column caption='Success' datatype='integer' name='[success]' role='measure' type='quantitative' />
+            <column caption='Suicide' datatype='integer' name='[suicide]' role='measure' type='quantitative' />
+            <column-instance column='[Killed]' derivation='Sum' name='[sum:Killed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Wounded]' derivation='Sum' name='[sum:Wounded:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[success]' derivation='Sum' name='[sum:success:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[suicide]' derivation='Sum' name='[sum:suicide:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1lav1tj0bi422g1cpcgah00xcjr0].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1lav1tj0bi422g1cpcgah00xcjr0].[sum:Killed:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1lav1tj0bi422g1cpcgah00xcjr0].[sum:success:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1lav1tj0bi422g1cpcgah00xcjr0].[sum:suicide:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1lav1tj0bi422g1cpcgah00xcjr0].[sum:Wounded:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1lav1tj0bi422g1cpcgah00xcjr0].[md:Calculation_759419540141338624:ok]'>
+            <groupfilter function='member' level='[md:Calculation_759419540141338624:ok]' member='20151202' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1lav1tj0bi422g1cpcgah00xcjr0].[none:Country:nk]'>
+            <groupfilter function='union' user:ui-domain='cascading' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Iraq&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;United States&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1lav1tj0bi422g1cpcgah00xcjr0].[none:Country:nk]</column>
+            <column>[federated.1lav1tj0bi422g1cpcgah00xcjr0].[md:Calculation_759419540141338624:ok]</column>
+            <column>[federated.1lav1tj0bi422g1cpcgah00xcjr0].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1lav1tj0bi422g1cpcgah00xcjr0].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1lav1tj0bi422g1cpcgah00xcjr0].[Multiple Values]</rows>
+        <cols>([federated.1lav1tj0bi422g1cpcgah00xcjr0].[none:Group:nk] / ([federated.1lav1tj0bi422g1cpcgah00xcjr0].[none:Weapon_type:nk] / [federated.1lav1tj0bi422g1cpcgah00xcjr0].[:Measure Names]))</cols>
+      </table>
+      <simple-id uuid='{F4E87949-0D80-4DF9-9B76-479EB7099C96}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_data' name='federated.1lav1tj0bi422g1cpcgah00xcjr0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lav1tj0bi422g1cpcgah00xcjr0'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Group]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Killed]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='all_data.csv' datatype='integer' name='[__tableau_internal_object_id__].[all_data.csv_3D89AC8B63A14440964E87323ACA1AB7]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Wounded]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='all_data.csv' datatype='table' name='[__tableau_internal_object_id__].[all_data.csv_3D89AC8B63A14440964E87323ACA1AB7]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[all_data.csv_3D89AC8B63A14440964E87323ACA1AB7]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:all_data.csv_3D89AC8B63A14440964E87323ACA1AB7:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Group]' derivation='None' name='[none:Group:nk]' pivot='key' type='nominal' />
+            <column caption='Success' datatype='integer' name='[success]' role='measure' type='quantitative' />
+            <column caption='Suicide' datatype='integer' name='[suicide]' role='measure' type='quantitative' />
+            <column-instance column='[Killed]' derivation='Sum' name='[sum:Killed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Wounded]' derivation='Sum' name='[sum:Wounded:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[success]' derivation='Sum' name='[sum:success:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[suicide]' derivation='Sum' name='[sum:suicide:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1lav1tj0bi422g1cpcgah00xcjr0].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1lav1tj0bi422g1cpcgah00xcjr0].[sum:Killed:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1lav1tj0bi422g1cpcgah00xcjr0].[sum:success:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1lav1tj0bi422g1cpcgah00xcjr0].[sum:suicide:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1lav1tj0bi422g1cpcgah00xcjr0].[sum:Wounded:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1lav1tj0bi422g1cpcgah00xcjr0].[none:Country:nk]'>
+            <groupfilter function='union' user:ui-domain='cascading' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Iraq&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;United States&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1lav1tj0bi422g1cpcgah00xcjr0].[sum:Killed:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1lav1tj0bi422g1cpcgah00xcjr0].[sum:Wounded:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1lav1tj0bi422g1cpcgah00xcjr0].[sum:success:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1lav1tj0bi422g1cpcgah00xcjr0].[sum:suicide:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.1lav1tj0bi422g1cpcgah00xcjr0].[none:Country:nk]</column>
+            <column>[federated.1lav1tj0bi422g1cpcgah00xcjr0].[:Measure Names]</column>
+            <column>[federated.1lav1tj0bi422g1cpcgah00xcjr0].[sum:Killed:qk]</column>
+            <column>[federated.1lav1tj0bi422g1cpcgah00xcjr0].[sum:Wounded:qk]</column>
+            <column>[federated.1lav1tj0bi422g1cpcgah00xcjr0].[sum:success:qk]</column>
+            <column>[federated.1lav1tj0bi422g1cpcgah00xcjr0].[sum:suicide:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1lav1tj0bi422g1cpcgah00xcjr0].[none:Group:nk]' />
+              <text column='[federated.1lav1tj0bi422g1cpcgah00xcjr0].[none:Country:nk]' />
+              <text column='[federated.1lav1tj0bi422g1cpcgah00xcjr0].[none:Group:nk]' />
+              <text column='[federated.1lav1tj0bi422g1cpcgah00xcjr0].[Multiple Values]' />
+              <text column='[federated.1lav1tj0bi422g1cpcgah00xcjr0].[__tableau_internal_object_id__].[cnt:all_data.csv_3D89AC8B63A14440964E87323ACA1AB7:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.6481767892837524' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1lav1tj0bi422g1cpcgah00xcjr0].[Multiple Values]</rows>
+        <cols>([federated.1lav1tj0bi422g1cpcgah00xcjr0].[none:Country:nk] / [federated.1lav1tj0bi422g1cpcgah00xcjr0].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{3EBB2800-8399-4E45-8815-775A66F49511}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1lav1tj0bi422g1cpcgah00xcjr0].[md:Calculation_759419540141338624:ok]' type='filter' />
+            <card mode='checkdropdown' param='[federated.1lav1tj0bi422g1cpcgah00xcjr0].[none:Country:nk]' show-all='false' type='filter' values='cascading' />
+            <card pane-specification-id='0' param='[federated.1lav1tj0bi422g1cpcgah00xcjr0].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1lav1tj0bi422g1cpcgah00xcjr0].[:Measure Names]</field>
+            <field>[federated.1lav1tj0bi422g1cpcgah00xcjr0].[md:Calculation_759419540141338624:ok]</field>
+            <field>[federated.1lav1tj0bi422g1cpcgah00xcjr0].[none:Country:nk]</field>
+            <field>[federated.1lav1tj0bi422g1cpcgah00xcjr0].[none:Group:nk]</field>
+            <field>[federated.1lav1tj0bi422g1cpcgah00xcjr0].[none:Weapon_type:nk]</field>
+            <field>[federated.1lav1tj0bi422g1cpcgah00xcjr0].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8992FBB3-F2D7-4AFB-ABA4-7DF3227DEE3D}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.1lav1tj0bi422g1cpcgah00xcjr0].[none:Country:nk]' show-all='false' type='filter' values='cascading' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1lav1tj0bi422g1cpcgah00xcjr0].[none:Country:nk]</field>
+            <field>[federated.1lav1tj0bi422g1cpcgah00xcjr0].[none:Group:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5A53183A-E874-4566-AD19-D37A2CD1F70C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
