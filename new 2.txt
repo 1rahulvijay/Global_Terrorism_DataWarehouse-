@@ -1,0 +1,51 @@
+SELECT (
+		SELECT attack_id
+		FROM dbo.dim_attack
+		WHERE [attacktype1] = dbo.staging.attacktype1
+			AND [AttackType] = dbo.staging.[AttackType]
+		)
+	,(
+		SELECT [country_id]
+		FROM [dbo].[dim_country]
+		WHERE [country_code] = dbo.staging.[country_code]
+			AND [Country] = dbo.staging.[Country]
+			AND [region] = dbo.staging.[region]
+			AND [state] = dbo.staging.[state]
+			AND [city] = dbo.staging.[city]
+		)
+	,(
+		SELECT [weapon_id]
+		FROM [dbo].[dim_weapon]
+		WHERE [weaptype_category_id] = dbo.staging.[weaptype_category_id]
+			AND [Weapon] = dbo.staging.[Weapon]
+		)
+	,(
+		SELECT [TimeID]
+		FROM [dbo].[dim_time]
+		WHERE [year] = dbo.staging.[year]
+			AND [month] = dbo.staging.[month]
+			AND [day] = dbo.staging.[day]
+		)
+	,(
+		SELECT [target_id]
+		FROM [dbo].[dim_Target]
+		WHERE [target_category_id] = dbo.staging.[target_category_id]
+			AND [Target_category] = dbo.staging.[Target_category]
+			AND [Target] = dbo.staging.[Target]
+		)
+FROM dbo.staging
+GROUP BY dbo.staging.attacktype1
+	,dbo.staging.AttackType
+	,dbo.staging.[country_code]
+	,dbo.staging.[Country]
+	,dbo.staging.[region]
+	,dbo.staging.[state]
+	,dbo.staging.[city]
+	,dbo.staging.[weaptype_category_id]
+	,dbo.staging.[Weapon]
+	,dbo.staging.[year]
+	,dbo.staging.[month]
+	,dbo.staging.[day]
+	,dbo.staging.[target_category_id]
+	,dbo.staging.[Target_category]
+	,[Target] = dbo.staging.[Target];
